@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nerd.TapdaqUnityPlugin" android:versionName="1.0" android:versionCode="1" android:installLocation="preferExternal">
+  <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+  <application>
+
+    <!-- AppLovin SDK-less -->
+    <activity android:name="com.tapdaq.sdk.adnetworks.applovin.ALVideoActivity" />
+    <activity android:name="com.tapdaq.sdk.adnetworks.applovin.ALWebActivity" />
+
+    <!-- Debug Views -->
+    <activity android:name="com.tapdaq.sdk.TMTestActivity" />
+    <activity android:name="com.tapdaq.sdk.TMTestNativeActivity" />
+    <activity android:name="com.tapdaq.sdk.TMInterstitialActivity" />
+    <activity android:name="com.tapdaq.sdk.TMMoreAppsActivity"/>
+
+    <!-- Chartboost SDK-less -->
+    <activity android:name="com.tapdaq.sdk.adnetworks.chartboost.CBWebActivity" android:hardwareAccelerated="true" />
+  </application>
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+</manifest>

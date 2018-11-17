@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tapdaq.tapdaqchartboost" android:versionName="1.0" android:versionCode="1" android:installLocation="preferExternal">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <application>
+ 	<activity android:name="com.chartboost.sdk.CBImpressionActivity"
+               android:excludeFromRecents="true"
+               android:hardwareAccelerated="true"
+               android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+               android:configChanges="keyboardHidden|orientation|screenSize" />
+  </application>
+
+</manifest>
